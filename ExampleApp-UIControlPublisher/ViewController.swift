@@ -18,16 +18,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        colorPublisher.assign(to: \.backgroundColor, on: view)
+            .store(in: &cancellables)
     }
     
-//    var colorPublisher = AnyPublisher<UIColor?, Never> {
-//        Publishers.CombineLatest3(
-//            r.publisher(for: .valueChanged),
-//            g.publisher(for: .valueChanged),
-//            b.publisher(for: .valueChanged)
-//        )
-//    }
+    var colorPublisher: AnyPublisher<UIColor?, Never> {
+        Publishers.CombineLatest3(
+            r.valuePublisher,
+            g.valuePublisher,
+            b.valuePublisher
+        )
+        .map { values in
+            UIColor(red: CGFloat(values.0), green: CGFloat(values.1), blue: CGFloat(values.2), alpha: 1.0) as UIColor?
+        }
+        .eraseToAnyPublisher()
+    }
 }
 
 
