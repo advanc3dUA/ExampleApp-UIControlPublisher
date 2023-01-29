@@ -12,6 +12,7 @@ extension UISlider {
     var valuePublisher: AnyPublisher<Float, Never> {
         publisher(for: .valueChanged)
             .map { $0.value }
+            .merge(with: Just(value))
             .eraseToAnyPublisher()
     }
 }
