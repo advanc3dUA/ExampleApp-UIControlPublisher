@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+//    var colorPublisher = AnyPublisher<UIColor?, Never> {
+//        Publishers.CombineLatest3(
+//            r.publisher(for: .valueChanged),
+//            g.publisher(for: .valueChanged),
+//            b.publisher(for: .valueChanged)
+//        )
+//    }
 }
 
 
