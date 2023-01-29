@@ -29,8 +29,9 @@ class ViewController: UIViewController {
             b.valuePublisher
         )
         .map { values in
-            UIColor(red: CGFloat(values.0), green: CGFloat(values.1), blue: CGFloat(values.2), alpha: 1.0) as UIColor?
+            UIColor(red: CGFloat(values.0), green: CGFloat(values.1), blue: CGFloat(values.2), alpha: 1.0)
         }
+        .makeOptional()
         .eraseToAnyPublisher()
     }
 }

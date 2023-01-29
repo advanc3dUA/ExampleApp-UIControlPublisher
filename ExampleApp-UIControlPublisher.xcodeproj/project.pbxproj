@@ -16,6 +16,7 @@
 		BFAFF75A2986747100C9D53F /* Combine+UIControlPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF7592986747100C9D53F /* Combine+UIControlPublisher.swift */; };
 		BFAFF75C298676AF00C9D53F /* ControlPublishable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF75B298676AF00C9D53F /* ControlPublishable.swift */; };
 		BFAFF75E298678EE00C9D53F /* UISlider+valuePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF75D298678EE00C9D53F /* UISlider+valuePublisher.swift */; };
+		BFAFF7622986A4C800C9D53F /* Publisher+makeOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAFF7612986A4C800C9D53F /* Publisher+makeOptional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BFAFF7592986747100C9D53F /* Combine+UIControlPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+UIControlPublisher.swift"; sourceTree = "<group>"; };
 		BFAFF75B298676AF00C9D53F /* ControlPublishable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPublishable.swift; sourceTree = "<group>"; };
 		BFAFF75D298678EE00C9D53F /* UISlider+valuePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISlider+valuePublisher.swift"; sourceTree = "<group>"; };
+		BFAFF7612986A4C800C9D53F /* Publisher+makeOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+makeOptional.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				BFAFF74529866E2800C9D53F /* AppDelegate.swift */,
 				BFAFF74729866E2800C9D53F /* SceneDelegate.swift */,
 				BFAFF74929866E2800C9D53F /* ViewController.swift */,
+				BFAFF7612986A4C800C9D53F /* Publisher+makeOptional.swift */,
 				BFAFF75D298678EE00C9D53F /* UISlider+valuePublisher.swift */,
 				BFAFF75B298676AF00C9D53F /* ControlPublishable.swift */,
 				BFAFF7592986747100C9D53F /* Combine+UIControlPublisher.swift */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFAFF75A2986747100C9D53F /* Combine+UIControlPublisher.swift in Sources */,
+				BFAFF7622986A4C800C9D53F /* Publisher+makeOptional.swift in Sources */,
 				BFAFF74A29866E2800C9D53F /* ViewController.swift in Sources */,
 				BFAFF74629866E2800C9D53F /* AppDelegate.swift in Sources */,
 				BFAFF75E298678EE00C9D53F /* UISlider+valuePublisher.swift in Sources */,
